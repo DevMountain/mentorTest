@@ -1,6 +1,5 @@
 import test from 'ava';
 import obj from './problems'
-console.log('hehehehehe', obj);
 test('Reversing String', t => {
   t.is(obj.reverseIt('scott'), 'ttocs', 'String needs to be reversed')
   t.is(obj.reverseIt('scott is cool'), 'looc si ttocs', 'String needs to be reversed')
@@ -25,7 +24,6 @@ test('Is Prime', t => {
   })
   t.false(obj.isPrime(4), 'Needs to return true if Prime and false if not')
   t.false(obj.isPrime(-1), 'Needs to return true if Prime and false if not')
-
 })
 // test('foo', t => {
 // 	t.pass();
