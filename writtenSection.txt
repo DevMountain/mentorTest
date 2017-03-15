@@ -22,4 +22,20 @@ Answer each question in a written format
 
 11. What is REST?
 
-12. Write four basic CRUD db queries using postgres syntax
+12. Name three ways of getting data from the URL using express
+
+create table users (
+id serial,
+name varchar(255),
+email varchar(255)
+)
+
+12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
+
+-Get all users:
+
+-Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+
+-Update the newly created user's name to 'Bobby Boy':
+
+-Delete the newly updated user:
