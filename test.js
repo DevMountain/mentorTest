@@ -1,5 +1,5 @@
 import test from 'ava';
-import obj from './problems'
+import obj from './toyProblems'
 test('Reversing String', t => {
   t.is(obj.reverseIt('scott'), 'ttocs', 'String needs to be reversed')
   t.is(obj.reverseIt('scott is cool'), 'looc si ttocs', 'String needs to be reversed')
@@ -24,6 +24,13 @@ test('Is Prime', t => {
   })
   t.false(obj.isPrime(4), 'Needs to return true if Prime and false if not')
   t.false(obj.isPrime(-1), 'Needs to return true if Prime and false if not')
+})
+test('What is foo', t =>{
+  t.is(obj.foo, '1020', 'Incorrect')
+})
+test('What will log', t =>{
+  t.is(obj.log1, 'Hello World', 'Incorrect')
+  t.is(obj.log2, undefined, 'Incorrect')
 })
 // test('foo', t => {
 // 	t.pass();

@@ -1,0 +1,25 @@
+Answer each question in a written format
+
+1. What does semantic HTML mean?
+
+2. What is the box model?
+
+3. What is the difference between IDs and Classes?
+
+4. What does the z-index do?
+
+5. Summarize what the keyword 'this' is used for?
+
+6. What is a callback?
+
+7. What is a closure?
+
+8. How does prototype work?
+
+9. What is MVC?
+
+10. What is the component lifecycle?
+
+11. What is REST?
+
+12. Write four basic CRUD db queries using postgres syntax
