@@ -1,28 +1,48 @@
 Answer each question in a written format
 
-1. What does semantic HTML mean?
+1. What does semantic HTML mean? NOTE: I dont remember us teaching this, and so Im not sure we can expect people to know it.
+Semantic Html is when you use element and class/id names to help define what something is.
+This makes the html more descriptive and easier to read
 
 2. What is the box model?
+The box model consists of what is around and element on the dom.
+There are the margin, border, padding, and element itself.
 
 3. What is the difference between IDs and Classes?
+ID's are for individual objects. There can be only one of any Id at any one time.
+Classes are for multiple elements at a time.
 
 4. What does the z-index do?
+It is used to bring things forward or back in the html and tells child components how to sit next to each other on the z-axis;
 
 5. Summarize what the keyword 'this' is used for?
+The keyword this represents the context of the object that it is bound to.
 
 6. What is a callback?
+a call back is a function passed into another function, to be called later.
 
 7. What is a closure?
+A closure is a function that returns another function or object with methods.
+The returned function/methods can remember the scope of the parent function.
 
 8. How does prototype work?
+A prototype adds a method to an existing type or constructor function.
+This method will then be part of the type/constructor and can be called on anything of that type as if it was part of it all along.
 
 9. What is MVC?
+MVC stands for model, view, controller.
+This is how frameworks such as angular work.
 
-10. What is the component lifecycle?
+10. What is the component lifecycle? NOTE: This is for react. Mentors should know some react, but aren't expected to know this I don't think.
+The component lifecycle is how react goes about updating components as the state and props update.
 
 11. What is REST?
+REST stands for representational state transfer.
+It is when the api and the front end are not directly connected. It is usually used with http requests.
 
-12. Name three ways of getting data from the URL using express
+12. Name three ways of getting data from the request using express NOTE: I changed url to request because to my knowledge, the url only has to ways of getting data.
+params, query, and body.
+
 
 create table users (
 id serial,
@@ -30,12 +50,21 @@ name varchar(255),
 email varchar(255)
 )
 
-12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
+12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax NOTE: #13?
 
 -Get all users:
+SELECT * FROM users
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+INSERT INTO users (name, email)
+VALUES ('your name', 'fake@fake.com')
 
 -Update the newly created user's name to 'Bobby Boy':
+UPDATE users
+SET
+  name = 'Bobby Boy'
+WHERE id = 1
 
 -Delete the newly updated user:
+DELETE FROM users
+WHERE id = 1
