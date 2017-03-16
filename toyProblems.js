@@ -7,6 +7,8 @@ module.exports = {
 
   reverseIt: (str) => str.split('').reverse().join(''),
 
+  //uncomment and finish the removeDups function. It will take in one parameter which is an Array
+  //remove all duplicates
 
   removeDups: (arr) => {
     var arr2 = [];
@@ -14,20 +16,18 @@ module.exports = {
     return arr2;
   },
 
-  //uncomment and finish the removeDups function. It will take in one parameter which is an Array
-  //remove all duplicates
-
-  titleIt: (str) => str.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' '),
-
   //uncomment and finish the titleIt function. It will take in one parameter which is a String and
   //capitalize the first letter of each word
 
-  vowelCounter: (str) => str.match(/[AEIOUaeiou]/g).length,
-
-
+  titleIt: (str) => str.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' '),
 
   //uncomment and finish the vowelCounter function. It will take in one parameter which is a String and
   //return the number of vowels in the string
+
+  vowelCounter: (str) => str.match(/[AEIOUaeiou]/g).length,
+
+  //uncomment and finish the isPrime function. It will take in one parameter which is a Number and
+  //return true if it is prime and false if it is not
 
   isPrime: (num) => {
     if (isNaN(num * 1) || num < 1) {
@@ -41,10 +41,7 @@ module.exports = {
     }
     return flag;
   },
-
-  //uncomment and finish the isPrime function. It will take in one parameter which is a Number and
-  //return true if it is prime and false if it is not
-
+  
   //what is the value of foo?
   //var foo = 10 + '20';
   //uncomment the foo property and give your answer as its value
