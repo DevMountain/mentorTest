@@ -2,27 +2,52 @@ Answer each question in a written format
 
 1. What does semantic HTML mean?
 
+  Semantic HTML is HTML that has meaning in it's tags. For example, typing a <div> is just making a division on your site, while typing <button> has functionality that allows a click, without needing to type extra code.
+
+
 2. What is the box model?
+
+  All CSS can be considered a type of box. It forms a block, and essentially we are adding colors, changing it's shape, and editing it in various ways to make them pretty. A box will have a margin, border, padding, and of course, content. The content is what you will type/paste in, padding, the area around the box, border, the edge lines of the box, and margin, the outside area of the border.
 
 3. What is the difference between IDs and Classes?
 
+  A class is a type of item, while an ID is the unique name of an item. A class would be used when you have several elements who will share the same style and formatting on your website, for example a div of comments. An id would be specific to just that piece of content, for example, a left-top sidebar.
+
 4. What does the z-index do?
+
+  Z-index causes content in websites to appear closer-farther from the retina. It causes a sense of depth, and can be used apart from aesthetic purposes such as making a fixed menu bar with a high z-index to make sure it can be clicked on regardless of what is "underneath" it.
 
 5. Summarize what the keyword 'this' is used for?
 
+  Imagine saying, "A glass cup is tall. A glass cup can hold 8 ounces of water. A glass can have different thickness". While this wouldn't be wrong, it would not be efficient. "This glass can have various thicknesses." Would make the flow and sound better. Using this in javascript is similar, and it also requires context to make it work, as it would not know what "this" is if it is used randomly. The way we can make sure it is used in context is with explicit, indirect, and function invocations.
+
 6. What is a callback?
+
+  A callback is a function that is passed into another function. It is passed as a parameter and executed inside of it.
 
 7. What is a closure?
 
+  A closure gets a variable and can make it local to it's function.
+
 8. How does prototype work?
+
+  Everything in Javascript is an object. These objects have properties. If you wanted to have a specific set of objects to have a special property, you could using prototypes. The prototype would then assign this property to those objects, so you do not have to through every single object and assign them, which in many ways, can get tedious, messy, slow down performance, etc.
 
 9. What is MVC?
 
+  Just like making a building requires a blueprint and architecture. Complex software also needs to have structure. MVC is a architectural pattern that helps build the UI. It consists of a model(M), which manages the data and logic (in example, collections usernames), View(V), which is what you see when visiting a website, and C(controller), which is like a commander, telling the model to show up in this view, and this view needs to have data from the model.
+
 10. What is the component lifecycle?
+
+    The start and end of a component in it's period. A component will start out as componentWillMount, a constructor, to start the building process. ComponentDidMount comes next, which means now that is out there, you can load data, make changes to the element, etc. Then comes componentWillRecieveProps, which means now it has data tnat will be injected into it, and need to trigger state transitions. You rendered a bar that said 1% on it,  and now it will be receiving props to transition this bar to %2. shouldComponentUpdate comes next, which means it will update, but it will ask permission first (by default). Using the previous example, when your bar component went from 1% to 2%, it will ask "hey, should I really go to 2%?". ComponentWillUpdate comes next, which is now asking, "before I go to 2% is there anything else you need me to do?". This will lead to componentDidUpdate, which means it did update, and now that bar has progressed 2%! Finally, we reach componentWillUnmount, which means now it has finished its job, and it is time to go, and before it will go, it will make sure there is not any requests left. Once that is done, it will go to garbagecollection and be picked to be gone.
 
 11. What is REST?
 
+   Rest stands for representational state transfer. It is a way to provide operations between computers on the Internet. It allows computers to get and use text representations as a whole. WWW would included in this, and it would be passing data in using HTML, XML, JSON, etc using HTTP methods, to "get" data, "post", data, "put"(update) data, or delete data.
+
 12. Name three ways of getting data from the URL using express
+
+    Three ways to obtain data would be by its body, queries, or its params.
 
 create table users (
 id serial,
@@ -34,8 +59,16 @@ email varchar(255)
 
 -Get all users:
 
+    SELECT * FROM users;
+
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+
+    INSERT INTO user (name, email) VALUES ('your name', 'fake@fake.com');
 
 -Update the newly created user's name to 'Bobby Boy':
 
+   UPDATE user SET name = "Bobby Boy" WHERE name = "your name";
+
 -Delete the newly updated user:
+
+  DELETE FROM user WHERE name = "Bobby Boy";
