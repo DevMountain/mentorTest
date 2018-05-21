@@ -6,31 +6,35 @@ Answer each question in a written format
 
 3. What is the difference between IDs and Classes?
 
-4. What does the z-index do?
+4. What is z-index (CSS property) do?
 
 5. Summarize what the keyword 'this' is used for?
 
-6. What is a callback?
+6. What is a callback? What are common uses for callbacks in JavaScript?
 
-7. What is a closure?
+7. What is a closure and why is it useful?
 
-8. How does prototype work?
+8. How does a prototype work?
 
-9. What is MVC?
+9. What is a component-based framework/library?
 
-10. What is the component lifecycle?
+10. What is the component lifecycle in React?
 
-11. What is REST?
+11. What is REST? (not just a description of the acronym)
 
-12. Name three ways of getting data from the URL using express
+12. Name three common ways of getting data from a request (in Express.JS):
 
+
+
+-- =====================
 create table users (
 id serial,
 name varchar(255),
 email varchar(255)
 )
+-- =====================
 
-12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
+13. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
 
