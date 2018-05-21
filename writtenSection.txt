@@ -6,7 +6,7 @@ Answer each question in a written format
 
 3. What is the difference between IDs and Classes?
 
-4. What is z-index (CSS property) do?
+4. What is z-index (CSS property) useful for?
 
 5. Summarize what the keyword 'this' is used for?
 
