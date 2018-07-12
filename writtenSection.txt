@@ -16,7 +16,7 @@ Answer each question in a written format
 
 8. How does a prototype work?
 
-9. What is a component-based framework/library?
+9. Describe what a component-based framework/library is?
 
 10. What is the component lifecycle in React?
 
